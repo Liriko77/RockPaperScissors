@@ -42,3 +42,17 @@ humanScore++;
     return "You lose! " + computerChoice + " beats " + humanChoice;
 
   }
+  
+
+function playGame() {
+  for (let round = 1; round <= 5; round++) {
+    console.log("=== Round " + round + " ===");
+    
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+console.log("You chose: " + humanSelection);
+console.log("Computer chose: " + computerSelection); 
+
+const result = playRound(humanSelection, computerSelection);
+console.log(result);
