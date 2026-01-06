@@ -64,3 +64,13 @@ console.log("-------------");
 
   console.log("=== Final Score ===");
 console.log(" Human: " + humanScore + " | Computer: " + computerScore);
+
+if (humanScore > computerScore) {
+  console.log("You did it! You won the game!");
+} else if (computerScore > humanScore) {
+  console.log("Hahaha! The AI won the game!");
+} else {
+  console.log("The game ended in a tie!");
+}
+}
+playGame();
