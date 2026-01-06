@@ -56,3 +56,11 @@ console.log("Computer chose: " + computerSelection);
 
 const result = playRound(humanSelection, computerSelection);
 console.log(result);
+
+console.log("Scores -> Human: " + humanScore + " | Computer: " + computerScore);
+
+console.log("-------------");
+  }
+
+  console.log("=== Final Score ===");
+console.log(" Human: " + humanScore + " | Computer: " + computerScore);
