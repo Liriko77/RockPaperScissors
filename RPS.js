@@ -33,3 +33,12 @@ function playRound(humanChoice, computerChoice) {
   ) 
 
 }
+humanScore++;
+    return "You win! " + humanChoice + " beats " + computerChoice;
+
+  } else {
+
+    computerScore++;
+    return "You lose! " + computerChoice + " beats " + humanChoice;
+
+  }
