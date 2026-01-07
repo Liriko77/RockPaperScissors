@@ -2,6 +2,7 @@ console.log("Hello World")
 
 let humanScore = 0;
 let computerScore = 0;
+
 console.log("Human Score: " + humanScore);
 console.log("Computer Score: " + computerScore);  
 
@@ -30,9 +31,8 @@ function playRound(humanChoice, computerChoice) {
     (humanChoice === "rock" && computerChoice === "scissors") ||
     (humanChoice === "paper" && computerChoice === "rock") ||
     (humanChoice === "scissors" && computerChoice === "paper")
-  ) 
+  ) {
 
-}
 humanScore++;
     return "You win! " + humanChoice + " beats " + computerChoice;
 
@@ -42,9 +42,13 @@ humanScore++;
     return "You lose! " + computerChoice + " beats " + humanChoice;
 
   }
+}
   
-
 function playGame() {
+
+humanScore = 0;
+computerScore = 0;
+
   for (let round = 1; round <= 5; round++) {
     console.log("=== Round " + round + " ===");
     
